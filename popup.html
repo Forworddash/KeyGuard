@@ -5,12 +5,21 @@
   <style>
     body { font-family: Arial, sans-serif; }
     .password-item { margin-bottom: 10px; }
+    #auth-section { display: none; }
   </style>
 </head>
 <body>
   <h1>Password Manager</h1>
-  <div id="password-list"></div>
-  <button id="add-password">Add Password</button>
+  <div id="auth-section">
+    <input type="text" id="username" placeholder="Username"><br>
+    <input type="password" id="password" placeholder="Password"><br>
+    <button id="register">Register</button>
+    <button id="login">Login</button>
+  </div>
+  <div id="password-manager-section" style="display: none;">
+    <div id="password-list"></div>
+    <button id="add-password">Add Password</button>
+  </div>
   <script src="popup.js"></script>
 </body>
 </html>
